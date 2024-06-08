@@ -12,6 +12,17 @@ a {
   text-decoration: none;
 }
 
+// header {
+//   position: fixed;
+//   width: 100%;
+//   height: 90px;
+//   z-index: 999;
+//   background: #fff;
+//   top: 0;
+//   left: 0;
+//   box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.1);
+// }
+
 h4 {
   font-family: "Shadows Into Light", sans-serif;
   font-size: 30px;
@@ -110,54 +121,79 @@ h2 {
       display: block;
       border-bottom: 1px solid rgba(0, 0, 0, 0.04);
       margin: 0;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+      position: relative;
+      transition: all 0.2s ease-in-out;
+
+      a {
+        font-family: "Jost", sans-serif;
+        display: block;
+        height: auto;
+        color: #1e1318;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 45px;
+        letter-spacing: 0;
+        width: 100%;
+      }
     }
 
     ul li ul.dropdown {
-      width: 100%;
-      background: #fff;
-      position: absolute;
-      z-index: 999;
       display: none;
+      width: 220px;
+      background-color: #fff;
+      box-shadow: 0px 50px 100px 0px rgba(64, 1, 4, 0.1),
+        0px -6px 0px 0px rgba(248, 99, 107, 0.004);
+      position: absolute;
+      left: -35px;
+      top: 100%;
+      z-index: 0;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
     }
+  }
 
-    ul li:hover ul.dropdown {
-      display: block;
-    }
+  ul li:hover ul.dropdown {
+    display: block;
+  }
 
-    .dropdown li a {
-      color: rgb(1, 1, 1);
-    }
+  .dropdown li a {
+    color: rgb(1, 1, 1);
+  }
 
-    .dropdown li a:hover {
-      background: #5fbd74;
-      color: #fff;
-    }
+  .dropdown li:hover {
+    background: #5fbd74;
+    color: #fff;
+  }
 
-    ul {
-      display: flex;
-      gap: 20px;
+  .dropdown li:hover a {
+    color: #fff;
+  }
 
-      li {
-        display: inline-block;
-        position: relative;
+  ul {
+    li {
+      display: inline-block;
+      position: relative;
 
-        a {
-          display: block;
-          font-family: "Jost", sans-serif;
-          font-size: 15px;
-          letter-spacing: -0.5px;
-          font-weight: 600;
-          text-transform: capitalize;
-          color: #333;
-          padding: 0 15px;
-          height: 90px;
-          line-height: 90px;
-          text-decoration: none;
-        }
+      a {
+        display: block;
+        font-family: "Jost", sans-serif;
+        font-size: 15px;
+        letter-spacing: -0.5px;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: #333;
+        padding: 0 15px;
+        height: 90px;
+        line-height: 90px;
+        text-decoration: none;
+      }
 
-        a:hover {
-          color: #5fbd74;
-        }
+      a:hover {
+        color: #5fbd74;
       }
     }
   }
@@ -209,8 +245,8 @@ h2 {
     background-repeat: no-repeat;
     background-position: 145% 110%;
     background-size: 70%;
-    width: 630px;
-    height: 555px;
+    width: 100%;
+    height: 100%;
     background-color: #80cca7;
     padding: 30px 40px;
     display: flex;
@@ -1086,6 +1122,7 @@ footer {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  padding: 80px 0;
 
   .page-header-shape {
     background-image: url(/assets/images/page-header-img.png);
@@ -1275,5 +1312,61 @@ footer {
 
   .gallery-item {
     padding: 0 10px;
+  }
+}
+
+#rewiews-section {
+  padding: 80px 0;
+
+  .rewiews-item {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 40px;
+
+    .ratting {
+      li {
+        display: inline-block;
+        margin: 0;
+        line-height: 1;
+        color: #fab522;
+
+        i {
+          font-size: 10px;
+        }
+      }
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 15px;
+      margin-top: 0;
+    }
+
+    .rewi-thumb {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      gap: 10px;
+
+      h3 {
+        font-size: 18px;
+        margin: 0;
+        font-weight: 500;
+        line-height: 1.7;
+        color: #222;
+      }
+
+      h4 {
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0;
+        letter-spacing: 0;
+      }
+
+      img {
+        border-radius: 50%;
+      }
+    }
   }
 }

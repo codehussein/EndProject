@@ -106,33 +106,54 @@ h2 {
   display: block;
   border-bottom: 1px solid rgba(0, 0, 0, 0.04);
   margin: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.top-header .header-nav ul li ul.dropdown li a {
+  font-family: "Jost", sans-serif;
+  display: block;
+  height: auto;
+  color: #1e1318;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 45px;
+  letter-spacing: 0;
+  width: 100%;
 }
 .top-header .header-nav ul li ul.dropdown {
-  width: 100%;
-  background: #fff;
-  position: absolute;
-  z-index: 999;
   display: none;
+  width: 220px;
+  background-color: #fff;
+  box-shadow: 0px 50px 100px 0px rgba(64, 1, 4, 0.1), 0px -6px 0px 0px rgba(248, 99, 107, 0.004);
+  position: absolute;
+  left: -35px;
+  top: 100%;
+  z-index: 0;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
 }
-.top-header .header-nav ul li:hover ul.dropdown {
+.top-header ul li:hover ul.dropdown {
   display: block;
 }
-.top-header .header-nav .dropdown li a {
+.top-header .dropdown li a {
   color: rgb(1, 1, 1);
 }
-.top-header .header-nav .dropdown li a:hover {
+.top-header .dropdown li:hover {
   background: #5fbd74;
   color: #fff;
 }
-.top-header .header-nav ul {
-  display: flex;
-  gap: 20px;
+.top-header .dropdown li:hover a {
+  color: #fff;
 }
-.top-header .header-nav ul li {
+.top-header ul li {
   display: inline-block;
   position: relative;
 }
-.top-header .header-nav ul li a {
+.top-header ul li a {
   display: block;
   font-family: "Jost", sans-serif;
   font-size: 15px;
@@ -145,7 +166,7 @@ h2 {
   line-height: 90px;
   text-decoration: none;
 }
-.top-header .header-nav ul li a:hover {
+.top-header ul li a:hover {
   color: #5fbd74;
 }
 
@@ -191,8 +212,8 @@ h2 {
   background-repeat: no-repeat;
   background-position: 145% 110%;
   background-size: 70%;
-  width: 630px;
-  height: 555px;
+  width: 100%;
+  height: 100%;
   background-color: #80cca7;
   padding: 30px 40px;
   display: flex;
@@ -955,6 +976,7 @@ footer .footer-top .list-item .footer-info h3 p {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  padding: 80px 0;
 }
 #page-header .page-header-shape {
   background-image: url(/assets/images/page-header-img.png);
@@ -1128,4 +1150,50 @@ footer .footer-top .list-item .footer-info h3 p {
 }
 #gallery-section .gallery-item {
   padding: 0 10px;
+}
+
+#rewiews-section {
+  padding: 80px 0;
+}
+#rewiews-section .rewiews-item {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 40px;
+}
+#rewiews-section .rewiews-item .ratting li {
+  display: inline-block;
+  margin: 0;
+  line-height: 1;
+  color: #fab522;
+}
+#rewiews-section .rewiews-item .ratting li i {
+  font-size: 10px;
+}
+#rewiews-section .rewiews-item p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+#rewiews-section .rewiews-item .rewi-thumb {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+#rewiews-section .rewiews-item .rewi-thumb h3 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.7;
+  color: #222;
+}
+#rewiews-section .rewiews-item .rewi-thumb h4 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 0;
+}
+#rewiews-section .rewiews-item .rewi-thumb img {
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
