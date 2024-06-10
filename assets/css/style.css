@@ -12,6 +12,13 @@ a {
   text-decoration: none;
 }
 
+header {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 h4 {
   font-family: "Shadows Into Light", sans-serif;
   font-size: 30px;
@@ -133,7 +140,6 @@ h2 {
   position: absolute;
   left: -35px;
   top: 100%;
-  z-index: 0;
   transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 .top-header ul li:hover ul.dropdown {
@@ -143,8 +149,7 @@ h2 {
   color: rgb(1, 1, 1);
 }
 .top-header .dropdown li:hover {
-  background: #5fbd74;
-  color: #fff;
+  background-color: #5fbd74;
 }
 .top-header .dropdown li:hover a {
   color: #fff;
@@ -1196,4 +1201,57 @@ footer .footer-top .list-item .footer-info h3 p {
 }
 #rewiews-section .rewiews-item .rewi-thumb img {
   border-radius: 50%;
+}
+
+#farmers-section {
+  padding: 80px 0;
+}
+#farmers-section .farmer-box {
+  position: relative;
+  overflow: hidden;
+}
+#farmers-section .farmer-box .farmer-box:hover .farmer-content {
+  display: block;
+}
+#farmers-section .farmer-box .farmer-content {
+  background-color: #5fbd74;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  transform: translateY(100%);
+  transition: all 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+  visibility: hidden;
+  opacity: 0;
+}
+#farmers-section .farmer-box .farmer-content h3 {
+  font-size: 20px;
+  color: #fff;
+  line-height: 24px;
+  font-weight: 600;
+}
+#farmers-section .farmer-box .farmer-content h4 {
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#farmers-section .farmer-box .farner-img img {
+  width: 210px;
+  height: 210px;
+}
+#farmers-section .col-lg-3 {
+  padding: 15px;
+}
+
+#client-section {
+  padding: 80px 0;
+}
+#client-section .col-lg-3 {
+  padding: 15px;
 }/*# sourceMappingURL=style.css.map */
