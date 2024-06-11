@@ -1325,4 +1325,62 @@ footer .footer-top .list-item .footer-info h3 p {
   background: #fff;
   padding: 10px;
   border: 1px solid #eee;
+}
+
+#checkout-section {
+  padding: 80px 0;
+}
+#checkout-section .cart-total {
+  padding: 40px;
+  background-color: rgba(250, 181, 34, 0.062745098);
+}
+#checkout-section .cart-total li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#checkout-section .cart-total li span {
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #0e1318;
+}
+#checkout-section .checkout-form-wrap {
+  padding: 40px;
+  background-color: rgba(250, 181, 34, 0.062745098);
+}
+#checkout-section .checkout-form-wrap h2 {
+  font-size: 20px;
+  letter-spacing: -1px;
+  line-height: 48px;
+  color: #222;
+  margin: 0 0 10px;
+  font-weight: 600;
+  font-family: "Jost", sans-serif;
+}
+#checkout-section .checkout-form-wrap .checkout-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  margin-bottom: 30px;
+}
+#checkout-section .checkout-form-wrap .checkout-form .form-field input {
+  height: 50px;
+  border-radius: 0;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #eee;
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }/*# sourceMappingURL=style.css.map */
