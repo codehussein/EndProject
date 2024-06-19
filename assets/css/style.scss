@@ -42,8 +42,12 @@ p {
 }
 
 ul {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
+}
+
+li {
+  list-style-type: none;
 }
 
 .default-btn {
@@ -883,7 +887,6 @@ footer {
 }
 
 #shop-section {
-  background-color: #fab52210;
   padding: 80px 0;
 
   .col-lg-3 {
@@ -1572,6 +1575,536 @@ footer {
           background-clip: padding-box;
           appearance: none;
         }
+      }
+    }
+  }
+}
+
+#product-detail-section {
+  border-bottom: 1px solid #eee;
+  padding: 80px 0;
+
+  .product-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
+    align-items: center;
+
+    .ratting {
+      text-align: right;
+      display: flex;
+      gap: 5px;
+
+      li {
+        display: inline-block;
+        color: #ff9529;
+        font-size: 14px;
+        margin: 0 -2px;
+
+        i {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+.product-detail {
+  .icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    |li {
+      color: #7a7a7a;
+    }
+
+    a {
+      background-color: #eee;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border-radius: 50%;
+      display: inline-block;
+      color: black;
+    }
+  }
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 1;
+  margin: 10px 0;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: #222;
+  letter-spacing: -0.5px;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+}
+
+.price {
+  color: #333;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+  line-height: 1.7;
+  letter-spacing: -0.5px;
+  margin: 0 0 10px;
+
+  span {
+    font-size: 16px;
+    text-decoration: none;
+    color: #5dce53;
+    margin-left: 10px;
+  }
+}
+
+p {
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 0;
+  color: #7a7a7a;
+}
+
+.product-meta {
+  margin-bottom: 30px;
+
+  li {
+    margin-bottom: 5px;
+    color: #333;
+
+    a {
+      color: #7a7a7a;
+      margin-left: 5px;
+    }
+  }
+}
+
+.product-btn {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+
+  input {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #eee;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    text-align: center;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+  }
+
+  .basket-btn {
+    background-color: #333;
+    color: #fff;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    padding: 0 30px;
+    display: inline-block;
+    margin-left: 15px;
+  }
+}
+
+.product-info {
+  margin-top: 15px;
+
+  .category {
+    li {
+      a {
+        font-family: "Jost", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #7a7a7a;
+        display: block;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+#shopgrid-section {
+  padding: 80px 0;
+
+  .color-list label input ~ .checkmark.black {
+    background-color: #333333;
+  }
+  .color-list label input ~ .checkmark.green {
+    background-color: #0abf53;
+  }
+  .color-list label input ~ .checkmark.blue {
+    background-color: #00aeff;
+  }
+  .color-list label input ~ .checkmark.red {
+    background-color: #ff4c4c;
+  }
+  .color-list label input ~ .checkmark.yellow {
+    background-color: #ffc845;
+  }
+
+  .pagination-wrap {
+    margin-top: 30px;
+
+    li {
+      display: inline-block;
+      margin: 0 10px 0 0;
+
+      a.active {
+        background-color: #5fbd74;
+        border: 1px solid #5fbd74;
+        color: #fff;
+      }
+
+      a {
+        background-color: #fff;
+        border: 1px solid #eee;
+        color: #7a7a7a;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .col-lg-3 {
+    padding: 15px;
+  }
+
+  .product-card {
+    padding: 20px 0px;
+    width: 250px;
+  }
+
+  .product-info {
+    margin-top: 15px;
+
+    .price {
+      font-family: "Jost", sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      color: #7a7a7a;
+      display: block;
+
+      span {
+        color: #a6a6a6;
+        text-decoration: line-through;
+        margin-left: 5px;
+        font-family: "Jost", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+      }
+    }
+
+    h3 {
+      margin: 0;
+      cursor: pointer;
+      text-transform: capitalize;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.7;
+      color: #222;
+      letter-spacing: -0.5px;
+      font-family: "Jost", sans-serif;
+    }
+
+    .product-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 15px;
+      align-items: center;
+      .stars {
+        text-align: right;
+
+        li {
+          display: inline-block;
+          color: #ff9529;
+          font-size: 14px;
+          margin: 0 -2px;
+        }
+      }
+    }
+
+    .product-category {
+      display: block;
+      padding: 0;
+      margin: 0;
+
+      a {
+        font-family: "Jost", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #7a7a7a;
+        display: block;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .product-image {
+    position: relative;
+    overflow: hidden;
+    width: 220px;
+
+    .in-stock {
+      background-color: #5fbd74;
+      height: 20px;
+      line-height: 20px;
+      display: inline-block;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      color: #fff;
+      font-size: 12px;
+      font-family: "Jost", sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 1 15px;
+      border-radius: 0;
+    }
+
+    .out-stock {
+      background-color: #ff9529;
+      height: 20px;
+      line-height: 20px;
+      display: inline-block;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      color: #fff;
+      font-size: 12px;
+      font-family: "Jost", sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 0 15px;
+      border-radius: 0;
+    }
+
+    .hot {
+      background-color: #fe4819;
+      height: 20px;
+      line-height: 20px;
+      display: inline-block;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      color: #fff;
+      font-size: 12px;
+      font-family: "Jost", sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 0 15px;
+      border-radius: 0;
+    }
+
+    img {
+      width: 264px;
+    }
+  }
+
+  .product-shorting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    div {
+      color: #7a7a7a;
+    }
+
+    .orderby {
+      border: none;
+      outline: none;
+      box-shadow: none;
+      color: #7a7a7a;
+      word-wrap: normal;
+    }
+  }
+
+  .shop-sidebar {
+    .shop-sidebar-widget {
+      margin-bottom: 40px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 40px;
+
+      .range-slider-output {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        a {
+          color: #222;
+        }
+      }
+
+      .tags {
+        li {
+          display: inline-block;
+
+          a {
+            background-color: #eee;
+            display: inline-block;
+            font-family: "Jost", sans-serif;
+            text-transform: capitalize;
+            font-size: 14px;
+            color: #7a7a7a;
+            padding: 3px 15px;
+            margin: 0 3px 10px 0;
+          }
+
+          a:hover {
+            background: #5fbd74;
+            color: #fff;
+          }
+        }
+      }
+
+      .range-slider {
+        width: 100%;
+
+        input {
+          appearance: none;
+          width: 100%;
+          height: 10px;
+          background: #eee;
+          outline: none;
+          transition: opacity 0.2s;
+        }
+      }
+
+      .size-list {
+        li {
+          display: inline-block;
+          margin-right: 5px;
+
+          a {
+            font-size: 14px;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid #eee;
+            display: inline-block;
+            color: #222;
+          }
+
+          a:hover {
+            background-color: #5fbd74;
+            color: #fff;
+          }
+        }
+      }
+
+      .color-list {
+        .checkmark {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          height: 20px;
+          width: 20px;
+        }
+
+        .checkmark::after {
+          display: none;
+          position: absolute;
+          content: "\f00c";
+          font-family: "Font Awesome 5 Free";
+          font-size: 10px;
+          font-weight: 600;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          color: #fff;
+        }
+
+        input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+          margin: 0;
+          font-family: inherit;
+          font-size: inherit;
+          line-height: inherit;
+        }
+
+        label {
+          display: block;
+          position: relative;
+          cursor: pointer;
+          font-size: 16px;
+          padding-left: 30px;
+          user-select: none;
+        }
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+    }
+
+    .category-list {
+      height: 190px;
+      overflow-y: scroll;
+      padding-right: 20px;
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all 0.3s ease;
+        margin-bottom: 10px;
+
+        span {
+          border: 1px solid #eee;
+          font-size: 14px;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+        }
+
+        span:hover {
+          background-color: #5dce53;
+          color: #fff;
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
+
+        a {
+          color: #7a7a7a;
+        }
+      }
+    }
+  }
+
+  .shop-widget-header {
+    h3 {
+      font-size: 16px;
+      margin-bottom: 30px;
+      line-height: 1;
+
+      span {
+        color: #5fbd74;
+        line-height: 1;
+        font-weight: 600;
       }
     }
   }

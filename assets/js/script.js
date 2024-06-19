@@ -1,3 +1,10 @@
+const input = document.getElementById("input");
+  number = document.querySelector(".number");
+
+input.addEventListener("input", () => {
+  number.textContent = "$" + input.value;
+});
+   
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 10,
@@ -20,3 +27,5 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+
