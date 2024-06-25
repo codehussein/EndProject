@@ -96,7 +96,7 @@ header {
     margin-left: 20px;
     gap: 20px;
 
-    a {
+    .header-btn {
       background: #5fbd74;
       color: #fff;
       font-family: "Jost", sans-serif;
@@ -1584,6 +1584,23 @@ footer {
   border-bottom: 1px solid #eee;
   padding: 80px 0;
 
+  .product-gallery {
+    width: 100%;
+    margin-right: 50px;
+    border: 1px solid #eee;
+  }
+
+  .small-imgs {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+    border: 1px solid #eee;
+  }
+
   .product-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2106,6 +2123,56 @@ p {
         line-height: 1;
         font-weight: 600;
       }
+    }
+  }
+}
+
+#product-description {
+  padding: 80px 0;
+
+  .tab-content {
+    .description {
+      padding: 40px;
+      border: 1px solid #eee;
+      margin-top: 40px;
+
+      .description-meta {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 10px;
+
+        span {
+          color: #333;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .tab-navigation {
+    border-bottom: 1px solid #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    button.home-tab {
+      color: #5fbd74;
+    }
+
+    button {
+      border: none;
+      background: #ffff;
+      cursor: pointer;
+      font-family: "Jost", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: -0.2px;
+      padding: 0;
+      margin-right: 30px;
+      padding-bottom: 10px;
+      position: relative;
     }
   }
 }
